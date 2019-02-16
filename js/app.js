@@ -10,5 +10,13 @@ var app = new Vue({
         languages: myData.bio.languages,
         schools: myData.education.schools,
         jobs: myData.work.jobs
+    },
+    methods: {
+        showInfo: function(event) {
+            event.target.parentNode.querySelector(".info").style.display = "block"
+        },
+        hideInfo: function(event) {
+            event.target.parentNode.querySelector(".info").style.display = "none"
+        }
     }
 });

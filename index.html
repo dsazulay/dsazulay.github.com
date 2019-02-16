@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diego Azulay</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
     <div id="app" class="container">
+      <!-- protifolio section -->
+      <div class="portifolio">
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/samsung_gallery.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/samsung_gallery.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/bluebat_editor.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/samsung_gallery.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/samsung_gallery.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+          <div class="column is-one-third">
+            <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
+              <image class="rounded-corner" src="img/bluebat_editor.jpg"></image>
+              <div class="overlay"></div>
+              <p class="info">Samsung Gallery VR</p>
+            </figure>
+          </div>
+        </div>
+      </div>
+
       <div class="columns">
         <div class="column is-one-quarter">
           <p>BIO</p>
