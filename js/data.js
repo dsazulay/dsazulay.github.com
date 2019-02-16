@@ -70,7 +70,7 @@ var myData = {
     "education": {
         "schools": [{
             "name": "Universidade Federal do Amazonas",
-            "dates": "2011-2017",
+            "dates": "2018",
             "degree": "Barcehlor of Science",
             "majors": "Computer Science",
             "location": "Manaus, AM, BR",
@@ -81,6 +81,11 @@ var myData = {
             "degree": "Non-degree Internship",
             "majors": "Computer Science",
             "location": "Queens, NY, US",
+            "url": ""
+        }],
+        "certifications": [{
+            "name": "",
+            "dates": "",
             "url": ""
         }],
         "onlineCourses": [{
