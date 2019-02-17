@@ -13,10 +13,18 @@ var app = new Vue({
     },
     methods: {
         showInfo: function(event) {
-            event.target.parentNode.querySelector(".info").style.display = "block"
+            var infoNode = event.target.parentNode.querySelector(".info")
+            if (!infoNode) {
+                infoNode = event.target.parentNode.parentNode.querySelector(".info")
+            }
+            infoNode.style.display = "block"
         },
         hideInfo: function(event) {
-            event.target.parentNode.querySelector(".info").style.display = "none"
+            var infoNode = event.target.parentNode.querySelector(".info")
+            if (!infoNode) {
+                infoNode = event.target.parentNode.parentNode.querySelector(".info")
+            }
+            infoNode.style.display = "none"
         }
     }
 });
