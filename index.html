@@ -10,9 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-    <div id="app" class="container">
+    <div id="app">
+      <header class="hero is-dark is-fullheight">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Fullheight title
+              </h1>
+              <h2 class="subtitle">
+                Fullheight subtitle
+              </h2>
+          </div>
+      </header>
       <!-- protifolio section -->
-      <div class="portifolio">
+      <section class="section portifolio">
         <div class="columns">
           <div class="column is-one-third">
             <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
@@ -67,86 +78,21 @@
             </figure>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="columns">
-        <div class="column is-one-quarter">
-          <p>BIO</p>
-        </div>
-        <div class="column">
-          <p>{{ name }}</p>
-          <p>{{ occupation }}</p>
-          <p>{{ location }}</p>
-          <p>{{ email }}</p>
-          <p>{{ phone }}</p>
-        </div>
-      </div>
-      <hr>
-
-      <div class="columns">
-        <div class="column is-one-quarter">
-          <p>SKILLS</p>
-        </div>
-        <div class="column">
-          <p>Programming</p>
-          <div v-for="skill in skills">
-            <p>{{ skill.name }}</p>
+      <footer class="footer footer-padding">
+        <div class="content has-text-centered">
+          <!-- <h1 class="title">Contact</h1> -->
+          <div class="social-links">
+            <a class="button is-link is-large is-outlined is-rounded" href="#"><span class="fab fa-linkedin-in fa-w-16 svg"></span></a>
+            <a class="button is-link is-large is-outlined is-rounded" href="#"><svg class="fab fa-github"></svg></a>
+            <a class="button is-link is-large is-outlined is-rounded" href="#"><svg class="far fa-envelope"></svg></a>
           </div>
-          <br>
-
-          <p>Languages</p>
-          <div v-for="language in languages">
-            <p>{{ language.name }}</p>
-          </div>
+          <a class="made-with-bulma" href="https://bulma.io">
+            <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24">
+          </a>
         </div>
-      </div>
-      <hr>
-
-      <div class="columns">
-        <div class="column is-one-quarter">
-            <p>WORK EXPERIENCE</p>
-        </div>
-        
-        <div class="column">
-          <h5>Front End Developer / w3schools.com</h5>
-          <h6>Jan 2015 - Current</h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <div v-for="job in jobs">
-            <h5>{{ job.title }} / {{ job.employer }}</h5>
-            <h6>{{ job.dates }}</h6>
-            <p>{{ job.description }}</p>
-            <br>
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <div class="columns">
-        <div class="column is-one-quarter">
-          <p>PROJECTS</p>
-        </div>
-        <div class="column">
-          <h5>Front End Developer / w3schools.com</h5>
-          <h6>Jan 2015 - Current</h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-        </div>
-      </div>
-      <hr>
-      
-      <div class="columns">
-        <div class="column is-one-quarter">
-          <p>EDUCATION</p>
-        </div>
-        <div class="column">
-          <div v-for="school in schools">
-            <h5>{{ school.name }}</h5>
-            <h6>{{ school.dates }}</h6>
-            <p>{{ school.degree}} {{ school.majors }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      </footer>
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
   </body>
