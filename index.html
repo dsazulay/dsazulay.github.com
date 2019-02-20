@@ -13,17 +13,21 @@
     <div id="app">
       <header class="hero is-dark is-fullheight">
           <div class="hero-body">
-            <div class="container">
+            <div class="container has-text-centered">
               <h1 class="title">
-                Fullheight title
+                Hi, I'm Diego Azulay
               </h1>
               <h2 class="subtitle">
-                Fullheight subtitle
+                A software developer
               </h2>
           </div>
       </header>
       <!-- protifolio section -->
-      <section class="section portifolio">
+      <section class="section">
+        <div class="section has-text-centered">
+          <h1 class="title is-1 is-spaced">Projects</h1>
+          <h2 class="subtitle">Some of the projects that I worked.</h2>
+        </div>
         <div class="columns">
           <div class="column is-one-third">
             <figure v-on:mouseover="showInfo" v-on:mouseout="hideInfo" class="image is-4by3 thumb">
@@ -31,7 +35,7 @@
               <div class="overlay"></div>
               <div class="info">
                 <p>Samsung Gallery VR</p>
-                <a class="button is-link is-outlined" href="https://www.oculus.com/experiences/gear-vr/1113617725394318/">More info</a>
+                <a class="button is-light is-outlined" href="https://www.oculus.com/experiences/gear-vr/1113617725394318/">More info</a>
               </div>
             </figure>
           </div>
@@ -40,9 +44,9 @@
               <image class="rounded-corner" src="img/kepler_pathfinder.jpg"></image>
               <div class="overlay"></div>
               <div class="info">
-                  <p>Kepler pathfinder</p>
-                  <a class="button is-link is-outlined" href="https://www.oculus.com/experiences/go/1679473835427082/">More info</a>
-                </div>
+                <p>Kepler pathfinder</p>
+                <a class="button is-light is-outlined" href="https://www.oculus.com/experiences/go/1679473835427082/">More info</a>
+              </div>
             </figure>
           </div>
           <div class="column is-one-third">
@@ -50,9 +54,9 @@
               <image class="rounded-corner" src="img/look_to_the_sky.jpg"></image>
               <div class="overlay"></div>
               <div class="info">
-                  <p>Look to the Sky</p>
-                  <a class="button is-link is-outlined" href="https://www.oculus.com/experiences/gear-vr/1236186189841229/">More info</a>
-                </div>
+                <p>Look to the Sky</p>
+                <a class="button is-light is-outlined" href="https://www.oculus.com/experiences/gear-vr/1236186189841229/">More info</a>
+              </div>
             </figure>
           </div>
         </div>
@@ -62,9 +66,9 @@
               <image class="rounded-corner" src="img/samsungxr.jpg"></image>
               <div class="overlay"></div>
               <div class="info">
-                  <p>SamsungXR SDK</p>
-                  <a class="button is-link is-outlined" href="http://www.samsungxr.com/">More info</a>
-                </div>
+                <p>SamsungXR SDK</p>
+                <a class="button is-light is-outlined" href="http://www.samsungxr.com/">More info</a>
+              </div>
             </figure>
           </div>
           <div class="column is-one-third">
@@ -72,21 +76,21 @@
               <image class="rounded-corner" src="img/bluebat_editor.jpg"></image>
               <div class="overlay"></div>
               <div class="info">
-                  <p>Bluebat editor</p>
-                  <a class="button is-link is-outlined" href="https://github.com/dsazulay/bluebat-editor">More info</a>
-                </div>
+                <p>Bluebat editor</p>
+                <a class="button is-light is-outlined" href="https://github.com/dsazulay/bluebat-editor">More info</a>
+              </div>
             </figure>
           </div>
         </div>
       </section>
 
       <footer class="footer footer-padding">
-        <div class="content has-text-centered">
-          <!-- <h1 class="title">Contact</h1> -->
+        <div class="container has-text-centered">
+          <h2 class="subtitle">Find me on Linkedin, Github or send me an e-mail.</h2>
           <div class="social-links">
-            <a class="button is-link is-large is-outlined is-rounded" href="#"><span class="fab fa-linkedin-in fa-w-16 svg"></span></a>
-            <a class="button is-link is-large is-outlined is-rounded" href="#"><svg class="fab fa-github"></svg></a>
-            <a class="button is-link is-large is-outlined is-rounded" href="#"><svg class="far fa-envelope"></svg></a>
+            <a class="button is-dark is-large is-outlined is-rounded" href="https://www.linkedin.com/in/diego-azulay/"><span class="fab fa-linkedin-in fa-w-16 svg"></span></a>
+            <a class="button is-dark is-large is-outlined is-rounded" href="https://github.com/dsazulay"><svg class="fab fa-github"></svg></a>
+            <a class="button is-dark is-large is-outlined is-rounded" href="mailto:dsazulay@gmail.com"><svg class="far fa-envelope"></svg></a>
           </div>
           <a class="made-with-bulma" href="https://bulma.io">
             <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24">
